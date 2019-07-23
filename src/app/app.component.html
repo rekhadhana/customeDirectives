@@ -1,0 +1,20 @@
+<h1>{{headingTitle}}</h1>
+
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Light Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appHighlight]="color">Hypher Text Markup Language!</p>
+
+<p [appHighlight]="color" defaultColor="blue">
+  Cascading style sheet!
+</p>
+
+<hr>
+<p><i>Mouse over the following lines to see fixed highlights</i></p>
+
+<p [appHighlight]="'yellow'">Javascript</p>
+<p [appHighlight]="'orange'">Angular</p>
+<div [appHighlight]="color">NodeJs</div>
